@@ -52,8 +52,9 @@ address { font-style: normal; }
 
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 68px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 68px; padding: 8px 0; }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--navy); }
+.brand img { height: 64px; width: auto; }
 .brand strong { display: block; font-size: 1.1rem; line-height: 1.1; }
 .brand small { display: block; font-size: .78rem; color: var(--muted); }
 .site-nav { display: flex; align-items: center; gap: 1.25rem; }
@@ -193,6 +194,7 @@ address { font-style: normal; }
 
 @media (max-width: 720px) {
   body { font-size: 16px; padding-bottom: 64px; }
+  .brand img { height: 52px; }
   .hero { padding: 2rem 0; }
   .hero-grid, .split, .content-grid, .grid-2, .grid-3, .grid-4, .reviews, .steps, .foot-grid { grid-template-columns: 1fr; }
   .hero-grid, .split, .content-grid { gap: 1.75rem; }
